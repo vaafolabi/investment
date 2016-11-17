@@ -7,10 +7,11 @@ declared-services:
     label: tradeoff_analytics
     plan: standard
 applications:
-- name: investment-advisor
+- name: bluedevtest
   command: npm start
   path: .
-  memory: 1G
+  memory: 2G
   services:
   - personality-insights-service
   - tradeoff-analytics-service
+  - mongodb01
